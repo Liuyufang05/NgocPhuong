@@ -1,126 +1,98 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Mẫu CV tiếng Việt một trang, có thể chỉnh sửa và in khổ A4.">
-  <title>CV | Nguyễn Tên</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f4ef">
+  <meta name="description" content="Hồ sơ cá nhân và kinh nghiệm của Lưu Ngọc Phương.">
+  <title>Lưu Ngọc Phương | Hồ sơ cá nhân</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="vc.css">
 </head>
 <body>
-  <main class="cv-page">
-    <aside class="sidebar" aria-label="Thông tin cá nhân và kỹ năng">
-      <div class="monogram" aria-hidden="true">NT</div>
+  <header class="topbar">
+    <a class="wordmark" href="#home" aria-label="Lưu Ngọc Phương, về đầu trang">LNP<span>.</span></a>
+    <nav aria-label="Điều hướng chính">
+      <a href="#about">Giới thiệu</a>
+      <a href="#experience">Kinh nghiệm</a>
+      <a href="#education">Học vấn</a>
+      <a class="nav-contact" href="#contact">Liên hệ <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
 
-      <section class="side-section contact">
-        <h2>LIÊN HỆ</h2>
-        <ul class="contact-list">
-          <li><span class="contact-icon" aria-hidden="true">⌕</span><span>[Số điện thoại]</span></li>
-          <li><span class="contact-icon" aria-hidden="true">✉</span><span>[Email của bạn]</span></li>
-          <li><span class="contact-icon" aria-hidden="true">⌖</span><span>[Thành phố, Việt Nam]</span></li>
-          <li><span class="contact-icon" aria-hidden="true">↗</span><span>[LinkedIn / Portfolio]</span></li>
-        </ul>
-      </section>
-
-      <section class="side-section">
-        <h2>KỸ NĂNG</h2>
-        <div class="skill-group">
-          <h3>Chuyên môn</h3>
-          <ul class="tag-list">
-            <li>[Kỹ năng 1]</li><li>[Kỹ năng 2]</li><li>[Kỹ năng 3]</li><li>[Kỹ năng 4]</li>
-          </ul>
+  <main id="home">
+    <section class="intro" aria-labelledby="page-title">
+      <div class="intro-copy">
+        <p class="eyebrow"><span class="status-dot"></span> HỒ SƠ CÁ NHÂN</p>
+        <h1 id="page-title">Lưu Ngọc<br><span>Phương.</span></h1>
+        <p class="intro-summary">[Vị trí hoặc lĩnh vực bạn đang theo đuổi]</p>
+        <div class="intro-actions">
+          <a class="button button-primary" href="#contact">Kết nối với tôi <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#about">Khám phá hồ sơ <span aria-hidden="true">↓</span></a>
         </div>
-        <div class="skill-group">
-          <h3>Công cụ</h3>
-          <ul class="tag-list">
-            <li>[Công cụ 1]</li><li>[Công cụ 2]</li><li>[Công cụ 3]</li>
-          </ul>
+      </div>
+      <div class="intro-art" aria-hidden="true">
+        <div class="art-ring ring-one"></div>
+        <div class="art-ring ring-two"></div>
+        <div class="art-core">LP</div>
+        <span class="art-label">LUÔN TÒ MÒ<br>LUÔN TIẾN BƯỚC</span>
+        <span class="art-index">01 / 04</span>
+      </div>
+      <div class="intro-footer"><span>VIỆT NAM</span><span>CV / 2026</span></div>
+    </section>
+
+    <section class="content-section about-section" id="about">
+      <div class="section-heading"><span class="section-number">01</span><h2>Đôi nét<br>về tôi</h2></div>
+      <div class="section-body">
+        <p class="lead">[Viết một đoạn ngắn giới thiệu về bạn, thế mạnh và điều bạn muốn đóng góp.]</p>
+        <div class="detail-grid">
+          <div><span class="detail-label">ĐỊA ĐIỂM</span><p>[Thành phố, Việt Nam]</p></div>
+          <div><span class="detail-label">LĨNH VỰC</span><p>[Lĩnh vực chuyên môn]</p></div>
+          <div><span class="detail-label">EMAIL</span><p>[email@example.com]</p></div>
+          <div><span class="detail-label">ĐIỆN THOẠI</span><p>[+84 ··· ··· ···]</p></div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="side-section">
-        <h2>HỌC VẤN</h2>
-        <article class="side-entry">
-          <p class="side-date">[Năm bắt đầu] — [Năm kết thúc]</p>
-          <h3>[Tên bằng cấp / chuyên ngành]</h3>
-          <p>[Tên trường đại học]</p>
-          <p class="side-note">[GPA, học bổng hoặc thành tích nổi bật]</p>
-        </article>
-      </section>
-
-      <section class="side-section">
-        <h2>NGÔN NGỮ</h2>
-        <div class="language-row"><span>[Tiếng Việt]</span><span class="level">[Bản ngữ]</span></div>
-        <div class="language-row"><span>[Ngoại ngữ]</span><span class="level">[Trình độ]</span></div>
-      </section>
-
-      <p class="sidebar-footnote">Thay nội dung trong dấu ngoặc vuông bằng thông tin của bạn.</p>
-    </aside>
-
-    <div class="main-content">
-      <header class="hero">
-        <p class="eyebrow">HỒ SƠ ỨNG TUYỂN</p>
-        <h1>NGUYỄN TÊN</h1>
-        <p class="headline">[Vị trí / Chức danh mong muốn]</p>
-        <p class="intro">[Viết 2–3 câu giới thiệu ngắn: kinh nghiệm nổi bật, thế mạnh chuyên môn và giá trị bạn có thể mang lại cho đội ngũ.]</p>
-      </header>
-
-      <section class="main-section">
-        <div class="section-heading">
-          <span class="section-mark" aria-hidden="true"></span>
-          <h2>KINH NGHIỆM LÀM VIỆC</h2>
-        </div>
+    <section class="content-section experience-section" id="experience">
+      <div class="section-heading"><span class="section-number">02</span><h2>Kinh<br>nghiệm</h2></div>
+      <div class="section-body">
         <article class="timeline-item">
-          <div class="item-topline">
-            <h3>[Chức danh gần nhất]</h3>
-            <span class="date">[MM/YYYY] — [Hiện tại]</span>
-          </div>
-          <p class="organization">[Tên công ty] <span>·</span> [Thành phố]</p>
-          <ul>
-            <li>[Mô tả trách nhiệm hoặc kết quả nổi bật; ưu tiên số liệu cụ thể nếu có.]</li>
-            <li>[Nêu một dự án, quy trình hoặc cải tiến bạn trực tiếp thực hiện.]</li>
-          </ul>
+          <p class="timeline-date">[2024 — HIỆN TẠI]</p>
+          <div><h3>[Vị trí công việc gần nhất]</h3><p class="organization">[Tên công ty] <span>·</span> [Thành phố]</p><p class="description">[Mô tả ngắn về trách nhiệm, kết quả nổi bật hoặc điều bạn đã học được.]</p></div>
         </article>
         <article class="timeline-item">
-          <div class="item-topline">
-            <h3>[Chức danh trước đó]</h3>
-            <span class="date">[MM/YYYY] — [MM/YYYY]</span>
-          </div>
-          <p class="organization">[Tên công ty] <span>·</span> [Thành phố]</p>
-          <ul>
-            <li>[Nêu đóng góp chính và tác động của công việc.]</li>
-            <li>[Nêu kỹ năng hoặc kết quả có liên quan đến vị trí ứng tuyển.]</li>
-          </ul>
+          <p class="timeline-date">[2022 — 2024]</p>
+          <div><h3>[Vị trí công việc trước đó]</h3><p class="organization">[Tên công ty] <span>·</span> [Thành phố]</p><p class="description">[Thêm một thành tựu cụ thể hoặc đóng góp đáng nhớ của bạn.]</p></div>
         </article>
-      </section>
+      </div>
+    </section>
 
-      <section class="main-section">
-        <div class="section-heading">
-          <span class="section-mark" aria-hidden="true"></span>
-          <h2>DỰ ÁN TIÊU BIỂU</h2>
+    <section class="content-section lower-section" id="education">
+      <div class="section-heading"><span class="section-number">03</span><h2>Học vấn<br>& kỹ năng</h2></div>
+      <div class="section-body lower-grid">
+        <div>
+          <h3 class="subheading">Học vấn</h3>
+          <article class="education-item"><p class="timeline-date">[2020 — 2024]</p><h3>[Tên trường đại học]</h3><p class="organization">[Ngành học] · [Bằng cấp]</p></article>
         </div>
-        <article class="project-item">
-          <div class="item-topline">
-            <h3>[Tên dự án]</h3>
-            <span class="date">[Năm]</span>
-          </div>
-          <p>[Mô tả ngắn mục tiêu, vai trò của bạn và kết quả đạt được. Có thể thêm đường dẫn dự án ở đây.]</p>
-        </article>
-      </section>
+        <div>
+          <h3 class="subheading">Kỹ năng</h3>
+          <ul class="skill-list"><li>[Kỹ năng chuyên môn]</li><li>[Công cụ hoặc phần mềm]</li><li>[Ngoại ngữ]</li><li>[Kỹ năng mềm]</li></ul>
+        </div>
+      </div>
+    </section>
 
-      <section class="main-section">
-        <div class="section-heading">
-          <span class="section-mark" aria-hidden="true"></span>
-          <h2>CHỨNG CHỈ &amp; HOẠT ĐỘNG</h2>
-        </div>
-        <div class="compact-entry">
-          <p><strong>[Tên chứng chỉ / hoạt động]</strong><span class="entry-detail">[Đơn vị cấp hoặc vai trò] · [Năm]</span></p>
-          <p><strong>[Thành tích / hoạt động bổ sung]</strong><span class="entry-detail">[Mô tả ngắn] · [Năm]</span></p>
-        </div>
-      </section>
-
-      <footer class="footer-note">Cảm ơn anh/chị đã dành thời gian xem hồ sơ của tôi.</footer>
-    </div>
+    <section class="contact-section" id="contact">
+      <p class="eyebrow">04 / LIÊN HỆ</p>
+      <h2>Cùng tạo nên<br>điều <span>ý nghĩa.</span></h2>
+      <p class="contact-note">Tôi luôn sẵn lòng trò chuyện về cơ hội và những ý tưởng mới.</p>
+      <a class="contact-email" href="mailto:email@example.com">[email@example.com] <span aria-hidden="true">↗</span></a>
+      <div class="social-links"><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+    </section>
   </main>
+
+  <footer class="site-footer"><a class="wordmark" href="#home">LNP<span>.</span></a><p>Được thiết kế với sự chỉn chu · 2026</p><a href="#home">Về đầu trang ↑</a></footer>
 </body>
 </html>
